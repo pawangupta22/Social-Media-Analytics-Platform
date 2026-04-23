@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Social Media Insights — ML Models</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<!-- ── HEADER ── -->
+<header>
+  <div class="logo">
+    <div class="logo-badge"><i class="fa-solid fa-chart-network"></i> ML</div>
+    Social Media Insights
+  </div>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#models">Models</a>
+    <a href="#">Code</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<!-- ── HERO ── -->
+<section class="hero">
+
+  <div class="hero-text">
+    <h1>Explore <span>Social Media<br>Analytics</span> Platform</h1>
+    <p>Five fully functional Machine Learning models — including Sentiment Analysis, Fake News Detection, Trend Analysis — each integrated into a live Streamlit app</p>
+    <a href="#models" class="hero-btn">
+      <i class="fa-solid fa-layer-group"></i> View Models
+    </a>
+  </div>
+
+  <!-- Stats visual panel instead of image -->
+  <div class="hero-visual">
+
+    <div class="hv-card" style="--hv-color:#3b82f6">
+      <div class="hv-icon"><i class="fa-solid fa-brain"></i></div>
+      <div class="hv-num">5</div>
+      <div class="hv-label">ML Models</div>
+    </div>
+
+    <div class="hv-card" style="--hv-color:#8b5cf6">
+      <div class="hv-icon"><i class="fa-solid fa-bolt"></i></div>
+      <div class="hv-num">2</div>
+      <div class="hv-label">Platforms</div>
+    </div>
+
+    <div class="hv-card" style="--hv-color:#22d3ee">
+      <div class="hv-icon"><i class="fa-solid fa-chart-line"></i></div>
+      <div class="hv-num">NLP</div>
+      <div class="hv-label">Core Tech</div>
+    </div>
+
+    <div class="hv-card" style="--hv-color:#10b981">
+      <div class="hv-icon"><i class="fa-brands fa-github"></i></div>
+      <div class="hv-num">OSS</div>
+      <div class="hv-label">Open Source</div>
+    </div>
+
+    <div class="hv-card wide" style="--hv-color:#f59e0b">
+      <div style="display:flex;align-items:center;gap:14px">
+        <div class="hv-icon"><i class="fa-solid fa-users"></i></div>
+        <div>
+          <div class="hv-num">Social Intelligence</div>
+          <div class="hv-label">Powered by Machine Learning</div>
+        </div>
+      </div>
+      <div class="hv-badge"><i class="fa-solid fa-circle-check"></i> &nbsp;Live</div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ── MODELS SECTION ── -->
+<div class="section-wrap">
+  <h2 class="section-title" id="models">Our ML Models</h2>
+  <p class="section-sub">
+    <i class="fa-solid fa-play"></i> &nbsp;Streamlit — use the model &nbsp;|&nbsp;
+    <i class="fa-solid fa-code"></i> &nbsp;Colab — view training code
+  </p>
+</div>
+
+<section class="models">
+
+  <!-- 1 Sentiment Analysis -->
+  <div class="card">
+    <div class="card-icon"><i class="fa-solid fa-face-smile-beam"></i></div>
+    <h3>Sentiment Analysis</h3>
+    <p>Detect text emotion as positive, negative, or neutral using Machine Learning models trained on social media data.</p>
+    <div class="card-tags">
+      <span class="tag">SVM</span><span class="tag">Classification</span>
+    </div>
+    <div class="btn-group">
+      <a href="https://sentimentmodel-boaalxnntuqrclswnmyt5e.streamlit.app/" class="btn streamlit"><i class="fa-solid fa-play"></i> Open Model</a>
+      <a href="https://colab.research.google.com/drive/1VyYNdsRHUNJJDWQpN5uO6UIpM-DnhZr8?usp=sharing"class="btn colab"><i class="fa-solid fa-code"></i> View Code</a>
+    </div>
+  </div>
+
+  <!-- 2 Fake News Detection -->
+  <div class="card">
+    <div class="card-icon"><i class="fa-solid fa-newspaper"></i></div>
+    <h3>Fake News Detection</h3>
+    <p>Predict whether a news article is fake or real using linguistic patterns and Machine Learning analysis.</p>
+    <div class="card-tags">
+      <span class="tag">TF-IDF</span><span class="tag">Random Forest</span><span class="tag">Binary</span>
+    </div>
+    <div class="btn-group">
+      <a href="https://fakenewsdetection-ksks4yb582sthf64mbpcrt.streamlit.app/" class="btn streamlit"><i class="fa-solid fa-play"></i> Open Model</a>
+      <a href="https://colab.research.google.com/drive/1i07-uEG5q0uVm4Vp1op2FquO9ec-0CRi?usp=sharing"    class="btn colab"><i class="fa-solid fa-code"></i> View Code</a>
+    </div>
+  </div>
+
+  <!-- 3 Trend Prediction -->
+  <div class="card">
+    <div class="card-icon"><i class="fa-solid fa-arrow-trend-up"></i></div>
+    <h3>Trend Prediction</h3>
+    <p>Identify popular topics and emerging trends by analyzing social media engagement patterns.</p>
+    <div class="card-tags">
+      <span class="tag">Random Forest</span><span class="tag">Classification</span><span class="tag">Regression</span>
+    </div>
+    <div class="btn-group">
+      <a href="YOUR_STREAMLIT_LINK_3" class="btn streamlit"><i class="fa-solid fa-play"></i> Open Model</a>
+      <a href="YOUR_COLAB_LINK_3"    class="btn colab"><i class="fa-solid fa-code"></i> View Code</a>
+    </div>
+  </div>
+
+  <!-- 4 User Clustering -->
+  <div class="card">
+    <div class="card-icon"><i class="fa-solid fa-users-viewfinder"></i></div>
+    <h3>User Clustering</h3>
+    <p>Group social media users into behavioural personas using K-Means clustering and PCA dimensionality reduction.</p>
+    <div class="card-tags">
+      <span class="tag">K-Means</span><span class="tag">Elbow Method</span><span class="tag">Unsupervised</span>
+    </div>
+    <div class="btn-group">
+      <a href="https://user-clustering-aw3bxozvhfd78vr5zizbv2.streamlit.app/" class="btn streamlit"><i class="fa-solid fa-play"></i> Open Model</a>
+      <a href="YOUR_COLAB_LINK_4"    class="btn colab"><i class="fa-solid fa-code"></i> View Code</a>
+    </div>
+  </div>
+
+  <!-- 5 Influencer Detection -->
+  <div class="card">
+    <div class="card-icon"><i class="fa-solid fa-star"></i></div>
+    <h3>Influencer Detection</h3>
+    <p>Identify key opinion leaders in social networks using graph-based PageRank centrality and engagement scoring.</p>
+    <div class="card-tags">
+      <span class="tag">Superwised</span><span class="tag">Random Forest</span>
+    </div>
+    <div class="btn-group">
+      <a href="https://testing-1-0000.streamlit.app/" class="btn streamlit"><i class="fa-solid fa-play"></i> Open Model</a>
+      <a href="https://colab.research.google.com/drive/1RvRrfeP0vgmNWleTyKYrCGvVPXDR_2lk?usp=sharing"class="btn colab"><i class="fa-solid fa-code"></i> View Code</a>
+    </div>
+  </div>
+
+</section>
+
+<footer>
+  <i class="fa-solid fa-brain"></i> &nbsp;
+  © 2026 Social Media Insights &nbsp;·&nbsp; Machine Learning Models &nbsp;·&nbsp; HTML &amp; CSS
+</footer>
+
+</body>
+</html>
