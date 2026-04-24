@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Social Media Insights — ML Models</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<!-- ── HEADER ── -->
+<header>
+  <div class="logo">
+    <div class="logo-badge"><i class="fa-solid fa-chart-network"></i> ML</div>
+    Social Media Insights
+  </div>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#models">Models</a>
+    <a href="#">Code</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<!-- ── HERO ── -->
+<section class="hero">
+
+  <div class="hero-text">
+    <h1>Explore <span>Social Media<br>Analytics</span> Platform</h1>
+    <p>Five fully functional Machine Learning models — including Sentiment Analysis, Fake News Detection, Trend Analysis — each integrated into a live Streamlit app</p>
+    <a href="#models" class="hero-btn">
+      <i class="fa-solid fa-layer-group"></i> View Models
+    </a>
+  </div>
+
+  <!-- ── SOCIAL ANALYTICS DASHBOARD ── -->
+  <div class="dashboard">
+
+    <!-- ROW 1: Platform reach bars -->
+    <div class="db-card db-platforms">
+      <div class="db-card-label"><i class="fa-solid fa-signal"></i> Platform Reach</div>
+      <div class="platform-row">
+        <div class="plat-item">
+          <div class="plat-icon" style="background:linear-gradient(135deg,#f9ce34,#ee2a7b,#6228d7)"><i class="fa-brands fa-instagram"></i></div>
+          <div class="plat-bar-wrap"><div class="plat-bar-track"><div class="plat-bar-fill" style="width:82%;background:linear-gradient(90deg,#ee2a7b,#f9ce34)"></div></div></div>
+          <span class="plat-pct">82%</span>
+        </div>
+        <div class="plat-item">
+          <div class="plat-icon" style="background:#111"><i class="fa-brands fa-x-twitter" style="color:#fff"></i></div>
+          <div class="plat-bar-wrap"><div class="plat-bar-track"><div class="plat-bar-fill" style="width:67%;background:linear-gradient(90deg,#666,#ccc)"></div></div></div>
+          <span class="plat-pct">67%</span>
+        </div>
+        <div class="plat-item">
+          <div class="plat-icon" style="background:#ff0000"><i class="fa-brands fa-youtube"></i></div>
+          <div class="plat-bar-wrap"><div class="plat-bar-track"><div class="plat-bar-fill" style="width:71%;background:linear-gradient(90deg,#ff0000,#ff8080)"></div></div></div>
+          <span class="plat-pct">71%</span>
+        </div>
+        <div class="plat-item">
+          <div class="plat-icon" style="background:#0a66c2"><i class="fa-brands fa-linkedin-in"></i></div>
+          <div class="plat-bar-wrap"><div class="plat-bar-track"><div class="plat-bar-fill" style="width:54%;background:linear-gradient(90deg,#0a66c2,#5cb8ff)"></div></div></div>
+          <span class="plat-pct">54%</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ROW 2: Sentiment donut + Trend sparkline -->
+    <div class="db-mid-row">
+
+      <div class="db-card db-sentiment">
+        <div class="db-card-label"><i class="fa-solid fa-face-smile-beam"></i> Sentiment Split</div>
+        <div class="donut-wrap">
+          <svg viewBox="0 0 80 80" class="donut-svg">
+            <circle cx="40" cy="40" r="30" fill="none" stroke="#1a2030" stroke-width="9"/>
+            <circle cx="40" cy="40" r="30" fill="none" stroke="#10b981" stroke-width="9" stroke-dasharray="109.3 188.5" stroke-dashoffset="47.1" stroke-linecap="round"/>
+            <circle cx="40" cy="40" r="30" fill="none" stroke="#3b82f6" stroke-width="9" stroke-dasharray="47.1 188.5" stroke-dashoffset="-62.2" stroke-linecap="round"/>
+            <circle cx="40" cy="40" r="30" fill="none" stroke="#f43f5e" stroke-width="9" stroke-dasharray="32.0 188.5" stroke-dashoffset="-109.3" stroke-linecap="round"/>
+            <text x="40" y="37" text-anchor="middle" fill="#e2e8f5" font-size="12" font-weight="800" font-family="Outfit,sans-serif">58%</text>
+            <text x="40" y="48" text-anchor="middle" fill="#5a6480" font-size="5.5" font-family="Outfit,sans-serif">POSITIVE</text>
+          </svg>
+          <div class="donut-legend">
+            <div class="legend-row"><span class="leg-dot" style="background:#10b981"></span>Positive <b>58%</b></div>
+            <div class="legend-row"><span class="leg-dot" style="background:#3b82f6"></span>Neutral <b>25%</b></div>
+            <div class="legend-row"><span class="leg-dot" style="background:#f43f5e"></span>Negative <b>17%</b></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="db-card db-trend">
+        <div class="db-card-label"><i class="fa-solid fa-arrow-trend-up"></i> Trend Activity</div>
+        <svg viewBox="0 0 180 56" class="spark-svg" preserveAspectRatio="none">
+          <defs>
+            <linearGradient id="spg" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.4"/>
+              <stop offset="100%" stop-color="#3b82f6" stop-opacity="0"/>
+            </linearGradient>
+          </defs>
+          <path d="M0,48 L22,42 L44,36 L66,28 L88,31 L110,18 L132,12 L154,7 L180,3" fill="none" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M0,48 L22,42 L44,36 L66,28 L88,31 L110,18 L132,12 L154,7 L180,3 L180,56 L0,56Z" fill="url(#spg)"/>
+          <circle cx="180" cy="3" r="4" fill="#3b82f6">
+            <animate attributeName="r" values="3;5.5;3" dur="1.8s" repeatCount="indefinite"/>
+            <animate attributeName="opacity" values="1;0.3;1" dur="1.8s" repeatCount="indefinite"/>
+          </circle>
+        </svg>
+        <div class="spark-stats">
+          <div class="spark-stat"><span class="spark-n" style="color:#10b981">+34%</span><span class="spark-l">This Week</span></div>
+          <div class="spark-stat"><span class="spark-n">2.4M</span><span class="spark-l">Posts Analysed</span></div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ROW 3: Social icons + live pill -->
+    <div class="db-card db-bottom">
+      <div class="db-bottom-left">
+        <div class="social-strip">
+          <div class="soc-ic" style="--sc:#e1306c;--scb:linear-gradient(135deg,#f9ce34,#ee2a7b,#6228d7)" title="Instagram"><i class="fa-brands fa-instagram"></i></div>
+          <div class="soc-ic" style="--sc:#fff;--scb:#111" title="X / Twitter"><i class="fa-brands fa-x-twitter"></i></div>
+          <div class="soc-ic" style="--sc:#ff0000;--scb:#ff0000" title="YouTube"><i class="fa-brands fa-youtube"></i></div>
+          <div class="soc-ic" style="--sc:#0a66c2;--scb:#0a66c2" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></div>
+          <div class="soc-ic" style="--sc:#1877f2;--scb:#1877f2" title="Facebook"><i class="fa-brands fa-facebook-f"></i></div>
+          <div class="soc-ic" style="--sc:#ff6154;--scb:#ff4500" title="Reddit"><i class="fa-brands fa-reddit-alien"></i></div>
+        </div>
+        <span class="db-caption">6 platforms monitored</span>
+      </div>
+      <div class="live-pill"><span class="live-dot"></span>LIVE</div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ── MODELS SECTION ── -->
+<div class="section-wrap">
+  <h2 class="section-title" id="models">Our ML Models</h2>
+  <p class="section-sub">
+    <i class="fa-solid fa-play"></i> &nbsp;Streamlit — use the model &nbsp;|&nbsp;
+    <i class="fa-solid fa-code"></i> &nbsp;Colab — view training code
+  </p>
+</div>
+
+<section class="models">
+
+  <!-- 1 Sentiment Analysis -->
+  <div class="card">
+    <div class="card-icon"><i class="fa-solid fa-face-smile-beam"></i></div>
+    <h3>Sentiment Analysis</h3>
+    <p>Detect text emotion as positive, negative, or neutral using Machine Learning models trained on social media data.</p>
+    <div class="card-tags">
+      <span class="tag">SVM</span><span class="tag">Classification</span>
+    </div>
+    <div class="btn-group">
+      <a href="https://sentimentmodel-boaalxnntuqrclswnmyt5e.streamlit.app/" class="btn streamlit"><i class="fa-solid fa-play"></i> Open Model</a>
+      <a href="https://colab.research.google.com/drive/1VyYNdsRHUNJJDWQpN5uO6UIpM-DnhZr8?usp=sharing"class="btn colab"><i class="fa-solid fa-code"></i> View Code</a>
+    </div>
+  </div>
+
+  <!-- 2 Fake News Detection -->
+  <div class="card">
+    <div class="card-icon"><i class="fa-solid fa-newspaper"></i></div>
+    <h3>Fake News Detection</h3>
+    <p>Predict whether a news article is fake or real using linguistic patterns and Machine Learning analysis.</p>
+    <div class="card-tags">
+      <span class="tag">TF-IDF</span><span class="tag">Random Forest</span><span class="tag">Binary</span>
+    </div>
+    <div class="btn-group">
+      <a href="https://fakenewsdetection-ksks4yb582sthf64mbpcrt.streamlit.app/" class="btn streamlit"><i class="fa-solid fa-play"></i> Open Model</a>
+      <a href="https://colab.research.google.com/drive/1i07-uEG5q0uVm4Vp1op2FquO9ec-0CRi?usp=sharing"    class="btn colab"><i class="fa-solid fa-code"></i> View Code</a>
+    </div>
+  </div>
+
+  <!-- 3 Trend Prediction -->
+  <div class="card">
+    <div class="card-icon"><i class="fa-solid fa-arrow-trend-up"></i></div>
+    <h3>Trend Prediction</h3>
+    <p>Identify popular topics and emerging trends by analyzing social media engagement patterns.</p>
+    <div class="card-tags">
+      <span class="tag">Random Forest</span><span class="tag">Classification</span><span class="tag">Regression</span>
+    </div>
+    <div class="btn-group">
+      <a href="YOUR_STREAMLIT_LINK_3" class="btn streamlit"><i class="fa-solid fa-play"></i> Open Model</a>
+      <a href="YOUR_COLAB_LINK_3"    class="btn colab"><i class="fa-solid fa-code"></i> View Code</a>
+    </div>
+  </div>
+
+  <!-- 4 User Clustering -->
+  <div class="card">
+    <div class="card-icon"><i class="fa-solid fa-users-viewfinder"></i></div>
+    <h3>User Clustering</h3>
+    <p>Group social media users into behavioural personas using K-Means clustering and PCA dimensionality reduction.</p>
+    <div class="card-tags">
+      <span class="tag">K-Means</span><span class="tag">Elbow Method</span><span class="tag">Unsupervised</span>
+    </div>
+    <div class="btn-group">
+      <a href="https://user-clustering-aw3bxozvhfd78vr5zizbv2.streamlit.app/" class="btn streamlit"><i class="fa-solid fa-play"></i> Open Model</a>
+      <a href="YOUR_COLAB_LINK_4"    class="btn colab"><i class="fa-solid fa-code"></i> View Code</a>
+    </div>
+  </div>
+
+  <!-- 5 Influencer Detection -->
+  <div class="card">
+    <div class="card-icon"><i class="fa-solid fa-star"></i></div>
+    <h3>Influencer Detection</h3>
+    <p>Identify key opinion leaders in social networks using graph-based PageRank centrality and engagement scoring.</p>
+    <div class="card-tags">
+      <span class="tag">Superwised</span><span class="tag">Random Forest</span>
+    </div>
+    <div class="btn-group">
+      <a href="https://testing-1-0000.streamlit.app/" class="btn streamlit"><i class="fa-solid fa-play"></i> Open Model</a>
+      <a href="https://colab.research.google.com/drive/1RvRrfeP0vgmNWleTyKYrCGvVPXDR_2lk?usp=sharing"class="btn colab"><i class="fa-solid fa-code"></i> View Code</a>
+    </div>
+  </div>
+
+</section>
+
+<footer>
+  <i class="fa-solid fa-brain"></i> &nbsp;
+  © 2026 Social Media Insights &nbsp;·&nbsp; Machine Learning Models &nbsp;·&nbsp; HTML &amp; CSS
+</footer>
+
+</body>
+</html>
